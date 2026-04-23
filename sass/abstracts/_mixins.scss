@@ -1,36 +1,84 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
+@use '../abstracts/variables' as *;
 
-/// Event wrapper
-/// @author Harry Roberts
-/// @param {Bool} $self [false] - Whether or not to include current selector
-/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
-@mixin on-event($self: false) {
-  @if $self {
-    &,
-    &:hover,
-    &:active,
-    &:focus,
-    &:focus-within {
-      @content;
-    }
-  } @else {
-    &:hover,
-    &:active,
-    &:focus,
-    &:focus-within {
-      @content;
-    }
+@mixin breakpoint($bp) {
+	@if $bp == tablet {
+		@media (min-width: $bp-tablet) {
+			@content;
+		}
+	}
+
+	@if $bp == tablethorizontal {
+		@media (min-width: $bp-tablet-horizontal) {
+			@content;
+		}
+	}
+
+	@if $bp == desktop {
+		@media (min-width: $bp-desktop) {
+			@content;
+		}
+	}
+
+	@if $bp == desktopxl {
+		@media (min-width: $bp-desktop-xl) {
+			@content;
+		}
+	}
+}
+
+@mixin reset-list() {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@mixin button($bg-color: $brand-color, $color: $white-color) {
+	display: inline-block;
+	padding: 16px 24px;
+	color: $white-color;
+	background-color: $brand-color;
+	text-decoration: none;
+	border-radius: 28px;
+	&:hover {
+		background-color: $light-brand;
+	}
+}
+
+@mixin button--pink-orange() {
+	@include button();
+	background-image: $gradient-orange;
+	&:hover {
+		background: var(
+      --Gradient-1-Hover,
+      linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0.5) 100%
+      ),
+      linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+    );
+	}
+}
+
+@mixin button--pink-blue() {
+	@include button();
+	background-image: $gradient-blue;
+	 &:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0.5) 100%
+      ),
+      linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%) !important;
   }
 }
 
-/// Make a context based selector a little more friendly
-/// @author Kitty Giraudel
-/// @param {String} $context
-@mixin when-inside($context) {
-  #{$context} & {
-    @content;
-  }
+@mixin button-link() {
+	color: $link-color;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 18px;
 }
-
