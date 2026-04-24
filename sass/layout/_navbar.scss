@@ -1,0 +1,40 @@
+@use '../abstracts/' as *;
+.nav-principal {
+    display:flex;
+    
+    &__list {
+        @include reset-list();
+        display:flex;
+        gap:20px;    
+    }
+    
+    &__list-link {
+        transition: all .5s ease;
+        &:hover {
+            color: $hover-dark-blue;
+            text-decoration:underline;
+        }
+    }
+    &__list-link--down{
+        position: relative;
+        
+        &::before {
+            content: '';
+            border-left: 2px solid $dark-blue;      
+            border-bottom: 2px solid $dark-blue;
+            width: 7px;
+            height: 7px;
+            transform: rotate(-45deg);
+            position: absolute;
+            right: -15px;
+            top: 10px;
+            border-radius: 1px;
+        }
+    
+        &:hover::before{
+            
+            border-left-color: $hover-dark-blue;
+            border-bottom-color: $hover-dark-blue;
+        }       
+    }    
+}

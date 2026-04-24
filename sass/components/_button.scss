@@ -1,4 +1,8 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-@use "../abstracts";
+@use "../abstracts" as *;
+
+.button {
+    @include button();
+}

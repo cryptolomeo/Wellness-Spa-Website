@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as *;
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 15px;
+    max-width: 40%;
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        gap: 20px;
+        align-items: center;
+        
+        &-logo{
+            width: 50px;
+            height: 50px;
+            background-color: $cyan;
+            border-radius: 50%;
+            img {
+                width: 15px;
+            }
+        }
+    
+        &-title{
+            font-weight: 500;
+            font-size: 25px;
+            color: $dark-blue;
+
+
+        }
+    
+        &-subtitle{
+            font-weight: 500;
+            font-size: 15px;
+            color: $gray
+        }
+    }
+
+}

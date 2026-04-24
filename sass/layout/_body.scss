@@ -1,19 +1,5 @@
-@use '../abstracts/mixins' as *;
+@use '../abstracts' as *;
 body {
-  	@include breakpoint(tablet) {
-		background-image: url("../img/hero-img.png");
-		background-repeat: no-repeat;
-		background-position: 125% 0;
-		background-size: 400px;
-	}
-
-	@include breakpoint(tablethorizontal) {
-		background-position: 120% 0;
-		background-size: 600px;
-	}
-	@include breakpoint(desktop) {
-		background-position: 108% -20px;
-		background-size: 500px;
-	}
+  	background-color: $background;
 }
 
