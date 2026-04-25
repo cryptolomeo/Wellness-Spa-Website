@@ -14,19 +14,16 @@
 @use 'layout/aside';
 @use 'layout/body';
 @use 'layout/container';
-@use 'layout/footer';
-@use 'layout/forms';
-@use 'layout/grid';
 @use 'layout/header';
 @use 'layout/navbar';
-@use 'layout/sidebar';
 @use 'layout/main';
-
+@use 'layout/stats';
+@use 'layout/coments';
 
 // 4. Components
 @use 'components/button';
 @use 'components/hero';
-@use 'components/stats';
+
 
 // 5. Pages
 @use 'pages/home';

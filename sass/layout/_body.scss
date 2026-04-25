@@ -2,29 +2,45 @@
 body {
   	background:linear-gradient(to right, $background 65%, $cyan 35%);
 	position: relative;
-	min-height: 100vh;	
+	max-width: 1200px;
+	height: 100vh;
+	max-height: 600px;
+ 	overflow-y: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	
 
 	&::before{
 		content:'';
+		background-color: $white;
+		position: absolute;
+		height: 100%;
+		width: 1000%; //Ancho amplio que cubra el margin auto
+		left: -100%; //Ancho amplio que cubra el margin auto
+		top: 80%;
+		z-index: -2;
+	}
+	
+	&::after{
+		content: '';
 		background-image: url('../../img/beauty-woman.png');
 		background-repeat: no-repeat;
 		background-size: 850px;
-		background-position: 70% bottom;
-		position: absolute;
+		background-position: bottom right;
 		width: 100%;
 		height: 100%;
 		z-index: -1;
+		right: 100px;
+		bottom: 0px;
+		position: absolute;
 	}
 
-	&::after{
-		content:'';
-		background-color: $white;
-		height: 25%;
-		width: 100%;
+	.decoration{
+		width: 320px;
+		height: 320px;
 		position: absolute;
-		bottom: 0;
-		left: 0;
+		right: 195px;
+		top: 30px;
 		z-index: -2;
 	}
 }
-
