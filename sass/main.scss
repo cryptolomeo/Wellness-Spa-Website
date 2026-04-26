@@ -17,13 +17,13 @@
 @use 'layout/header';
 @use 'layout/navbar';
 @use 'layout/main';
-@use 'layout/stats';
-@use 'layout/coments';
+
 
 // 4. Components
 @use 'components/button';
 @use 'components/hero';
-
+@use 'components/stats';
+@use 'components/coments';
 
 // 5. Pages
 @use 'pages/home';

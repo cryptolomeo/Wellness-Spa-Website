@@ -29,7 +29,7 @@
         }
         
         &--video-container:hover {
-            span {
+            a.hero__cta--video-play {
                 background-color: $hover-dark-blue;
                 path {
                     fill: $white;

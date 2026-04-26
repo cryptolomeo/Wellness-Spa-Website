@@ -1,10 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
-
-
-
-
+@use "sass:color";
 
 /// Regular font family
 /// @type List
@@ -21,7 +18,7 @@ $dark-blue: #264065 !default;
 
 /// Dark blue color, primary color
 /// @type Color
-$hover-dark-blue:lighten($dark-blue, 25%) !default;
+$hover-dark-blue: color.adjust($dark-blue, $lightness: 25%) !default;
 
 /// Cyan color, secondary color
 /// @type Color
