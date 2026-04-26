@@ -1,44 +1,41 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
 .stats {
-    display: flex;
-    flex-direction: row;
-    justify-items: center;   
-    max-width: 35%;
-    
-    &__item{
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        gap: 15px;
-        align-items: center;
-        background-color: $white;
-        padding: 20px 5px;
-        
-        &-logo{
-            width: 50px;
-            height: 50px;
-            padding: 5px;
-            background-color: $cyan;
-            border-radius: 50%;
-            img {
-                width: 15px;
-            }
-        }
-    
-        &-title{
-            font-weight: 500;
-            font-size: 25px;
-            color: $dark-blue;
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	max-width: 35%;
 
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		gap: 15px;
+		align-items: center;
+		background-color: $white;
+		padding: 20px 5px;
 
-        }
-    
-        &-subtitle{
-            font-weight: 500;
-            font-size: 15px;
-            color: $gray;
-            text-align: center;
-        }
-    }
+		&-logo {
+			width: 50px;
+			height: 50px;
+			padding: 5px;
+			background-color: $cyan;
+			border-radius: 50%;
+			img {
+				width: 15px;
+			}
+		}
 
+		&-title {
+			font-weight: 500;
+			font-size: 25px;
+			color: $dark-blue;
+		}
+
+		&-subtitle {
+			font-weight: 500;
+			font-size: 15px;
+			color: $gray;
+			text-align: center;
+		}
+	}
 }

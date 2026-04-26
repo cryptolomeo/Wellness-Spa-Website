@@ -1,64 +1,62 @@
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
 .hero {
-    max-width: 45%;
-    margin-top:35px;
-    padding-bottom: 35px;
-    
-    &__title {
-        font-weight: 700;
-        font-size: 45px;
-        margin-bottom: 30px;
-        color:$dark-blue
-    }
+	max-width: 45%;
+	margin-top: 35px;
+	padding-bottom: 35px;
 
-    &__subtitle {
-        font-weight: 400;
-        font-size: 16px;
-        color:$gray;
-        margin-bottom: 30px;
-    }
+	&__title {
+		font-weight: 700;
+		font-size: 45px;
+		margin-bottom: 30px;
+		color: $dark-blue;
+	}
 
-    &__cta {
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-    
+	&__subtitle {
+		font-weight: 400;
+		font-size: 16px;
+		color: $gray;
+		margin-bottom: 30px;
+	}
 
-        &--button{
-            margin-right: 30px;;
-        }
-        
-        &--video-container:hover {
-            a.hero__cta--video-play {
-                background-color: $hover-dark-blue;
-                path {
-                    fill: $white;
-                }
-            }
-            a {
-                color: $hover-dark-blue;
-                text-decoration: underline;
-            }
-        }
+	&__cta {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
 
-        &--video-play {
-            background-color: $white;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            svg{
-                padding-left: 2px;
-            }
-        }
+		&--button {
+			margin-right: 30px;
+		}
 
-        &--video-link {
-            display: inline-block;
-            width:120px;
-            padding-left: 10px;
-            
-        }
-    }
+		&--video-container:hover {
+			a.hero__cta--video-play {
+				background-color: $hover-dark-blue;
+				path {
+					fill: $white;
+				}
+			}
+			a {
+				color: $hover-dark-blue;
+				text-decoration: underline;
+			}
+		}
+
+		&--video-play {
+			background-color: $white;
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			svg {
+				padding-left: 2px;
+			}
+		}
+
+		&--video-link {
+			display: inline-block;
+			width: 120px;
+			padding-left: 10px;
+		}
+	}
 }

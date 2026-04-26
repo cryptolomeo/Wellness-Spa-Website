@@ -9,8 +9,9 @@ $text-font-stack: "Poppins", sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
+$code-font-stack:
+	"Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco",
+	monospace !default;
 
 /// Dark blue color, primary color
 /// @type Color
@@ -22,11 +23,11 @@ $hover-dark-blue: color.adjust($dark-blue, $lightness: 25%) !default;
 
 /// Cyan color, secondary color
 /// @type Color
-$cyan: #A9D6CB !default;
+$cyan: #a9d6cb !default;
 
 /// Copy text color
 /// @type Color
-$dark: #070D15 !default;
+$dark: #070d15 !default;
 
 /// Copy text color
 /// @type Color
@@ -34,16 +35,15 @@ $gray: #909090 !default;
 
 /// Medium grey
 /// @type Color
-$white: #FFFFFF !default;
+$white: #ffffff !default;
 
 /// Medium grey
 /// @type Color
-$background: #FAF8F5 !default;
-
+$background: #faf8f5 !default;
 
 //Breakpoints
 $bp-tablet: 768px;
 $bp-tablet-horizontal: 1024px;
 $bp-desktop: 1200px;
 $bp-desktop-xl: 1440px;
-$max-width:1200px;
+$max-width: 1200px;

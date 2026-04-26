@@ -1,17 +1,16 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 body {
-  	background:linear-gradient(to right, $background 65%, $cyan 35%);
+	background: linear-gradient(to right, $background 65%, $cyan 35%);
 	position: relative;
 	max-width: 1200px;
 	height: 100vh;
 	max-height: 600px;
- 	overflow-y: hidden;
+	overflow-y: hidden;
 	margin-left: auto;
 	margin-right: auto;
-	
 
-	&::before{
-		content:'';
+	&::before {
+		content: "";
 		background-color: $white;
 		position: absolute;
 		height: 100%;
@@ -20,10 +19,10 @@ body {
 		top: 80%;
 		z-index: -2;
 	}
-	
-	&::after{
-		content: '';
-		background-image: url('../../img/beauty-woman.png');
+
+	&::after {
+		content: "";
+		background-image: url("../../img/beauty-woman.png");
 		background-repeat: no-repeat;
 		background-size: 850px;
 		background-position: bottom right;
@@ -35,7 +34,7 @@ body {
 		position: absolute;
 	}
 
-	.decoration{
+	.decoration {
 		width: 320px;
 		height: 320px;
 		position: absolute;

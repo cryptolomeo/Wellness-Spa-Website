@@ -1,4 +1,4 @@
-@use '../abstracts';
+@use "../abstracts";
 
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
@@ -8,7 +8,7 @@
  * Set up a decent box model on the root element
  */
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /**
@@ -20,7 +20,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 /**
@@ -31,8 +31,8 @@ a {
   text-decoration: none;
 
   @include abstracts.on-event {
-    color: abstracts.$text-color;
-    text-decoration: underline;
+	color: abstracts.$text-color;
+	text-decoration: underline;
   }
 }
  */

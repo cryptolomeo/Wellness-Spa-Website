@@ -4,5 +4,5 @@
 @use "../abstracts" as *;
 
 .button {
-    @include button();
+	@include button();
 }

@@ -1,31 +1,33 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 .user-actions {
-    &__list{
-            @include reset-list();
-            display: flex;
-            align-items: center;
-            margin-right: 80px;
-            margin-left: 50px;
-            gap: 10px;
-                
-    }
-    
-    &__link {
-        &:hover path {
-            fill: $hover-dark-blue;
-        }
-    }
-   
-    &__link--search {}
-    
-    &__link--bag {}
-    
-    &__link--singin {
-        &:hover {
-            color: $hover-dark-blue;
-            text-decoration: underline;
-        }
-    }
+	&__list {
+		@include reset-list();
+		display: flex;
+		align-items: center;
+		margin-right: 80px;
+		margin-left: 50px;
+		gap: 10px;
+	}
 
-    &__button {}
+	&__link {
+		&:hover path {
+			fill: $hover-dark-blue;
+		}
+	}
+
+	&__link--search {
+	}
+
+	&__link--bag {
+	}
+
+	&__link--singin {
+		&:hover {
+			color: $hover-dark-blue;
+			text-decoration: underline;
+		}
+	}
+
+	&__button {
+	}
 }

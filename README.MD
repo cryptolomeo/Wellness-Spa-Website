@@ -1,4 +1,5 @@
 # Wellnes-Spa-Website
+
 Static homepage for a spa brand. Not responsive – intended for standard desktop viewing. Built with [HTML/SASS/VITE]. No mobile adaptations.
 
 # Spa Brand Homepage
