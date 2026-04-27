@@ -1,12 +1,11 @@
 @use "../abstracts/variables" as *;
 .comments {
 	position: absolute;
-	bottom: 30px;
-	right: 0;
+	top: 240px;
+	right: calc(50% - 635px);
 	width: 420px;
 	height: 330px;
 	&__card {
-		position: absolute;
 		width: 280px;
 		height: 150px;
 		border-radius: 16px;
